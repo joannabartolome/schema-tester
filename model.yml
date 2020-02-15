@@ -1,3 +1,10 @@
 
 firstName: 'Joanna'
 lastName: 'Bartolome'
+
+hobbies:
+  - 'painting'
+  - 'photography'
+  - 'coding'
+  - 'drawing'
+  - 'song writing'

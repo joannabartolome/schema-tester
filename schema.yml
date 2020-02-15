@@ -13,4 +13,19 @@ definitions:
         type: 'string'
       lastName:
         type: 'string'
+      hobbies:
+        type: 'array'
+        items:
+          $ref: '#/definitions/Hobby'
+
+  Hobby:
+    type: 'string'
+    enum:
+      - 'painting'
+      - 'photography'
+      - 'coding'
+      - 'drawing'
+      - 'song writing'
+
+
 
