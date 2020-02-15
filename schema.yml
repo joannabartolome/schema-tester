@@ -25,12 +25,15 @@ definitions:
       details: 
         type: 'string'
       button: 
-        type: 'object'
-        required:
-          - 'label'
-          - 'url'
-        properties:
-          label:
-            type: 'string'
-          url:
-            type: 'string'
+        $ref: '#/definitions/Button'
+
+  Button:
+    type: 'object'
+    required:
+      - 'label'
+      - 'url'
+    properties:
+      label:
+        type: 'string'
+      url:
+        type: 'string'
