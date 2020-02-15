@@ -1,0 +1,16 @@
+
+$ref: '#/definitions/Person'
+
+
+definitions:
+  Person:
+    type: 'object'
+    required:
+      - 'firstName'
+      - 'lastName'
+    properties:
+      firstName:
+        type: 'string'
+      lastName:
+        type: 'string'
+
