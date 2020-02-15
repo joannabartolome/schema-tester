@@ -1,37 +1,36 @@
 
 # Formal data structures
 
-$ref: '#/definitions/Person'
+$ref: '#/definitions/Page'
 
 
 definitions:
-  Person:
+  Page:
     type: 'object'
-    required:
-      - 'firstName'
-      - 'lastName'
     properties:
-      firstName:
-        type: 'string'
-      lastName:
-        type: 'string'
-      imageAvatar:
-        $ref: '#/definitions/ImageAvatar'
-      hobbies:
+      blades:
         type: 'array'
         items:
-          $ref: '#/definitions/Hobby'
+          $ref: '#/definitions/HeroBlade'
 
-  Hobby:
-    type: 'string'
-    enum:
-      - 'painting'
-      - 'photography'
-      - 'coding'
-      - 'drawing'
-      - 'song writing'
-      - 'writing'
-
-  ImageAvatar:
-    type: 'string'
-    
+  HeroBlade:
+    type: 'object'
+    properties:
+      blade:
+        const: 'hero'
+      image:
+        type: 'string'
+      title: 
+        type: 'string'
+      details: 
+        type: 'string'
+      button: 
+        type: 'object'
+        required:
+          - 'label'
+          - 'url'
+        properties:
+          label:
+            type: 'string'
+          url:
+            type: 'string'
