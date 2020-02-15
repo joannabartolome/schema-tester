@@ -1,0 +1,35 @@
+
+$ref: '#/definitions/Person'
+
+
+definitions:
+  Person:
+    type: 'object'
+    required:
+      - 'firstName'
+      - 'lastName'
+    properties:
+      firstName:
+        type: 'string'
+      lastName:
+        type: 'string'
+      imageAvatar:
+        $ref: '#/definitions/ImageAvatar'
+      hobbies:
+        type: 'array'
+        items:
+          $ref: '#/definitions/Hobby'
+
+  Hobby:
+    type: 'string'
+    enum:
+      - 'painting'
+      - 'photography'
+      - 'coding'
+      - 'drawing'
+      - 'song writing'
+      - 'writing'
+
+  ImageAvatar:
+    type: 'string'
+    
