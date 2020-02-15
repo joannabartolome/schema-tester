@@ -13,6 +13,8 @@ definitions:
         type: 'string'
       lastName:
         type: 'string'
+      imageAvatar:
+        $ref: '#/definitions/ImageAvatar'
       hobbies:
         type: 'array'
         items:
@@ -28,5 +30,6 @@ definitions:
       - 'song writing'
       - 'writing'
 
-
-
+  ImageAvatar:
+    type: 'string'
+    
