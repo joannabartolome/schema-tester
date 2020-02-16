@@ -8,6 +8,8 @@ $ref: '#/definitions/Page'
 definitions:
   Page:
     type: 'object'
+    additionalProperties: false
+    minProperties: 1
     properties:
       blades:
         type: 'array'
@@ -19,10 +21,18 @@ definitions:
     oneOf:
       - $ref: '#/definitions/HeroBlade'
       - $ref: '#/definitions/FeatureBlade'
+      - $ref: '#/definitions/AboutBlade'
+      - $ref: '#/definitions/TestimonialBlade'
+      - $ref: '#/definitions/BestSellerBlade'
+      - $ref: '#/definitions/LocationBlade'
+      - $ref: '#/definitions/InstagramBlade'
+      - $ref: '#/definitions/SignUpBlade'
 
 
   HeroBlade:
     type: 'object'
+    additionalProperties: false
+    minProperties: 5
     properties:
       blade:
         const: 'hero'
@@ -35,13 +45,18 @@ definitions:
       button: 
         $ref: '#/definitions/Button'
 
+
   FeatureBlade:
     type: 'object'
+    additionalProperties: false
+    minProperties: 2
     properties:
       blade:
         const: 'feature'
-      featureItems:
+      featuredItems:
         type: 'array'
+        minItems: 3
+        maxItems: 3
         items:
           type: 'object'
           properties:
@@ -52,11 +67,47 @@ definitions:
             about:
               type: 'string'
 
+
+  AboutBlade:
+    type: 'object'
+    properties:
+      blade:
+        const: 'about'
+
+  TestimonialBlade:
+    type: 'object'
+    properties:
+      blade:
+        const: 'testimonial'
+
+  BestSellerBlade:
+    type: 'object'
+    properties:
+      blade:
+        const: 'best-seller'
+
+  LocationBlade:
+    type: 'object'
+    properties:
+      blade:
+        const: 'location'
+
+  InstagramBlade:
+    type: 'object'
+    properties:
+      blade:
+        const: 'instagram'
+
+  SignUpBlade:
+    type: 'object'
+    properties:
+      blade:
+        const: 'sign-up'
+
   Button:
     type: 'object'
-    required:
-      - 'label'
-      - 'url'
+    additionalProperties: false
+    minProperties: 2
     properties:
       label:
         type: 'string'
