@@ -1,4 +1,7 @@
 
+# content by authors
+# direct analogy for Contentful. Instead of calling lists by design terminology ie. 'Card', you should
+# use author friendly semantics. NOT DESIGN semantics.
 # Page data
 
 blades:
@@ -10,3 +13,23 @@ blades:
     button:
       label: 'Shop Now'
       url: 'http://everlane.com/cheeky-cord-listing'
+
+
+  - blade: 'feature'
+    featuredItems:
+      - image: '3-col-card-image.jpg'
+        productNews: 'Coming Soon'
+        about: |
+          A legging that does it all, so you can do what you
+          want.
+
+      - image: '3-col-card-image.jpg'
+        productNews: 'Sweaters: Choose your Price'
+        about: |
+          Our best selling sweaters are selling fast.
+
+      - image: '3-col-card-image.jpg'
+        productNews: 'Farewell to Modern Loafer'
+        about: |
+          Get yours nefore it’s gone. Only $90
+

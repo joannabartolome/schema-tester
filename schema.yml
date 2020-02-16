@@ -1,4 +1,5 @@
 
+# Rules for authors
 # Formal data structures
 
 $ref: '#/definitions/Page'
@@ -11,7 +12,14 @@ definitions:
       blades:
         type: 'array'
         items:
-          $ref: '#/definitions/HeroBlade'
+          $ref: '#/definitions/Blade'
+
+
+  Blade:
+    oneOf:
+      - $ref: '#/definitions/HeroBlade'
+      - $ref: '#/definitions/FeatureBlade'
+
 
   HeroBlade:
     type: 'object'
@@ -26,6 +34,23 @@ definitions:
         type: 'string'
       button: 
         $ref: '#/definitions/Button'
+
+  FeatureBlade:
+    type: 'object'
+    properties:
+      blade:
+        const: 'feature'
+      featureItems:
+        type: 'array'
+        items:
+          type: 'object'
+          properties:
+            image:
+              type: 'string'
+            productNews:
+              type: 'string'
+            about:
+              type: 'string'
 
   Button:
     type: 'object'
