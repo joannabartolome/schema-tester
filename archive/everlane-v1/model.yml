@@ -1,0 +1,123 @@
+
+# content by authors
+# direct analogy for Contentful. Instead of calling lists by design terminology ie. 'Card', you should
+# use author friendly semantics. NOT DESIGN semantics.
+# Page data
+
+blades:
+  - blade: 'hero'
+    image: 'bg-image.jpg'
+    title: 'Cheeky Cord'
+    details: |
+      Because your butt should look good in cord too 
+    buttonShopNow:
+      label: 'Shop Now'
+      url: 'http://everlane.com/cheeky-cord-listing'
+
+
+  - blade: 'feature'
+    featuredItems:
+      - image: '3-col-card-image.jpg'
+        productNews: 'Coming Soon'
+        about: |
+          A legging that does it all, so you can do what you
+          want.
+
+      - image: '3-col-card-image.jpg'
+        productNews: 'Sweaters: Choose your Price'
+        about: |
+          Our best selling sweaters are selling fast.
+
+      - image: '3-col-card-image.jpg'
+        productNews: 'Farewell to Modern Loafer'
+        about: |
+          Get yours nefore it’s gone. Only $90
+
+
+  - blade: 'about'
+    title: 'Our Promise - Radical Transparency'
+    principleItems:
+      - image: '2-col-card-short-image.jpg'
+        caption: 'Meet the world’s cleanest denim factory'
+        button:
+            label: 'learn more'
+            url: 'http://everlane.com/about-factory'
+
+      - image: '2-col-card-short-image.jpg'
+        caption: 'Meet the world’s cleanest denim factory'
+        buttonLearnMore:
+            label: 'learn more'
+            url: 'http://everlane.com/about-jeans'
+
+
+  - blade: 'testimonial'
+    title: 'From the people - Customer Reviews'
+    testimonialItems:
+      - image: '2-col-card-tall-image.jpg'
+        starReview: 3.5
+        quote: |
+          “Really love the cut. Perfect length. Good amount of stretch”
+        name: 'Judith Lee'
+
+      - image: '2-col-card-tall-image.jpg'
+        starReview: 4.5
+        quote: |
+          “Really love the cut. Perfect length. Good amount of stretch”
+        name: 'Nancy Jones'
+
+      - image: '2-col-card-tall-image.jpg'
+        starReview: 4
+        quote: |
+          “Really love the cut. Perfect length. Good amount of stretch”
+        name: 'Ralph Nievarez'
+
+
+  - blade: 'best-seller'
+    title: 'Best Sellers'
+    bestSellerItems:
+      - image: '2-col-card-tall-image.jpg'
+        buttonGender:
+          label: 'Women'
+          url: 'http://everlane.com/shop/women'
+      - image: '2-col-card-tall-image.jpg'
+        buttonGender:
+          label: 'Men'
+          url: 'http://everlane.com/shop/men'
+
+
+  - blade: 'location'
+    title: 'Visit Us IRL'
+    body: |
+      Stop by our stores to learn the stories behind our products, get 
+      a personal styling session, or shop the latest in person. See our 
+      five locations.
+    image: '2-col-card-tall-image.jpg'
+
+
+  - blade: 'instagram'
+    title: 'On the gram'
+    buttonSocial:
+      label: 'Follow Along'
+      url: 'http://instagram.com/everlane'
+    instagramItems:
+      - image: 'social-square-image.jpg'
+        caption: '@notleli / Highwaisted jeans'
+        url: 'http://instagram.com/notleli/post253251'
+      - image: 'social-square-image.jpg'
+        caption: '@notleli / Highwaisted jeans'
+        url: 'http://instagram.com/notleli/post253251'
+      - image: 'social-square-image.jpg'
+        caption: '@notleli / Highwaisted jeans'
+        url: 'http://instagram.com/notleli/post253251'
+      - image: 'social-square-image.jpg'
+        caption: '@notleli / Highwaisted jeans'
+        url: 'http://instagram.com/notleli/post253251'
+
+
+  - blade: 'sign-up'
+    title: 'Free shipping on your first order'
+    buttonSignup:
+      label: 'Sign Up'
+      url: 'http://everlane.com/login'
+
+
