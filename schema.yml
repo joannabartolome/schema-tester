@@ -1,6 +1,12 @@
 
-# Rules for authors
-# Formal data structures
+# Rules for allowing authors to alter data.
+# Not rules for implementating UI component/design systems.
+# Refer to mockup or zeplin file for implementing all my button styles.
+# All the different styled buttons got moved into generic definition under 'Button'.
+# You can go directly into a CMS i.e., Contentful and create a content model for
+# each definition in this file.
+
+# Formal data structures for a Page
 
 $ref: '#/definitions/Page'
 
@@ -43,7 +49,7 @@ definitions:
       details: 
         type: 'string'
       buttonShopNow: 
-        $ref: '#/definitions/ButtonShopNow'
+        $ref: '#/definitions/Button'
 
 
   FeatureBlade:
@@ -88,7 +94,7 @@ definitions:
           caption:
             type: 'string'
           buttonLearnMore:
-            $ref: '#/definitions/ButtonLearnMore' 
+            $ref: '#/definitions/Button' 
 
   TestimonialBlade:
     type: 'object'
@@ -132,7 +138,7 @@ definitions:
             image:
               type: 'string'
             buttonGender:
-              $ref: '#/definitions/ButtonGender'
+              $ref: '#/definitions/Button'
 
   LocationBlade:
     type: 'object'
@@ -159,7 +165,7 @@ definitions:
       title:
         type: 'string'
       buttonSocial:
-        $ref: '#/definitions/ButtonSocial'
+        $ref: '#/definitions/Button'
       instagramItems:
         type: 'array'
         items:
@@ -185,10 +191,10 @@ definitions:
       title:
         type: 'string'
       buttonSignup:
-        $ref:  '#/definitions/ButtonSignUp'
+        $ref:  '#/definitions/Button'
 
 
-  ButtonSocial:
+  Button:
     type: 'object'
     minProperties: 2
     additionalProperties: false
@@ -198,44 +204,4 @@ definitions:
       url:
         type: 'string'
 
-
-  ButtonSignUp:
-    type: 'object'
-    minProperties: 2
-    additionalProperties: false
-    properties:
-      label: 
-        type: 'string'
-      url:
-        type: 'string'
-
-  ButtonShopNow:
-    type: 'object'
-    minProperties: 2
-    additionalProperties: false
-    properties:
-      label:
-        type: 'string'
-      url:
-        type: 'string'
-
-  ButtonLearnMore:
-    type: 'object'
-    minProperties: 2
-    additionalProperties: false
-    properties:
-      label:
-        type: 'string'
-      url:
-        type: 'string'
-
-  ButtonGender:
-    type: 'object'
-    minProperties: 2
-    additionalProperties: false
-    properties:
-      label:
-        type: 'string'
-      url:
-        type: 'string'
 

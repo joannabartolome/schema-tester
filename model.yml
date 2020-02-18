@@ -1,7 +1,14 @@
 
-# content by authors
-# direct analogy for Contentful. Instead of calling lists by design terminology ie. 'Card', you should
+# Content by authors
+# Direct analogy for Contentful. Instead of calling lists by design terminology ie. 'Card', you should
 # use author friendly semantics. NOT DESIGN semantics.
+
+# This yaml file has actual content that the author can alter. From top most: choosing blades that make up a page
+# to individual properties inside those blades such as Title, Caption, Body, Images, and Image links. Allowing
+# authors to change the string value is good for internationalization as well as maximum flexibility. I don't want 
+# to separate out the URL from the actual button because it makes it impossible for authors to change that data. 
+# If button labels or URLs weren't defined in here, they would have to be hardcoded into the UI component.
+
 # Page data
 
 blades:
